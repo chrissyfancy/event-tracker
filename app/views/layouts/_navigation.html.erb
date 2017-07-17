@@ -2,8 +2,12 @@
   <div class="top-bar-left">
     <ul>
       <li class="nav"><%= link_to 'Home', root_path %></li>
-      <li class="nav"><%= link_to 'Sign in', new_user_session_path %></li>
-      <li class="nav"><%= link_to 'Register', new_user_registration_path %></li>
+      <% if current_user %>
+        <li class="nav"><%= link_to 'Sign Out', destroy_user_session_path %></li>
+      <% else %>
+        <li class="nav"><%= link_to 'Sign In', new_user_session_path %></li>
+        <li class="nav"><%= link_to 'Register', new_user_registration_path %></li>
+      <% end %>
     </ul>
   </div>
 </div>
