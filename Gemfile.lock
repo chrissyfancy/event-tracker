@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/plataformatec/devise.git
+  revision: 71fc5b351a8e8473733b0ca29d60c06e43a0efe1
+  specs:
+    devise (4.3.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.2)
+      responders
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -144,6 +155,9 @@ GEM
       tilt
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     sass (3.5.0)
       sass-listen (~> 3.0.7)
     sass-listen (3.0.7)
@@ -196,7 +210,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-  devise
+  devise!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

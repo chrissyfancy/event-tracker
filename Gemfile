@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
 gem 'rails', '~> 5.0.4'
 gem 'pg', '~> 0.18'
