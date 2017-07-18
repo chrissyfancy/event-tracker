@@ -17,4 +17,8 @@
 .byebug_history
 
 .env
+
+# Ignore files from React app
 /node_modules
+/app/assets/javascripts/bundle.js
+/react/coverage
